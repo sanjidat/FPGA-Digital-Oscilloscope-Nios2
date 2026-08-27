@@ -1,0 +1,78 @@
+# ** Note: Capture done detected
+#    Time: 750 ns  Iteration: 1  Instance: /oscilloscope_top_tb
+# ** Note: Address = 0  Actual = 3185
+#    Time: 991 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 1  Actual = 3495
+#    Time: 1011 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 2  Actual = 3740
+#    Time: 1031 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 3  Actual = 3939
+#    Time: 1051 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 4  Actual = 4056
+#    Time: 1071 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 5  Actual = 4095
+#    Time: 1091 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 6  Actual = 4056
+#    Time: 1111 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 7  Actual = 3939
+#    Time: 1131 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 8  Actual = 3740
+#    Time: 1151 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 9  Actual = 3495
+#    Time: 1171 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 10  Actual = 3185
+#    Time: 1191 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 11  Actual = 2831
+#    Time: 1211 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 12  Actual = 2447
+#    Time: 1231 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 13  Actual = 2048
+#    Time: 1251 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 14  Actual = 1649
+#    Time: 1271 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 15  Actual = 1265
+#    Time: 1291 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 16  Actual = 911
+#    Time: 1311 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 17  Actual = 601
+#    Time: 1331 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 18  Actual = 356
+#    Time: 1351 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 19  Actual = 157
+#    Time: 1371 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 20  Actual = 40
+#    Time: 1391 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 21  Actual = 1
+#    Time: 1411 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 22  Actual = 40
+#    Time: 1431 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 23  Actual = 157
+#    Time: 1451 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 24  Actual = 356
+#    Time: 1471 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 25  Actual = 601
+#    Time: 1491 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 26  Actual = 911
+#    Time: 1511 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 27  Actual = 1265
+#    Time: 1531 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 28  Actual = 1649
+#    Time: 1551 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 29  Actual = 2048
+#    Time: 1571 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 30  Actual = 2447
+#    Time: 1591 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: Address = 31  Actual = 2831
+#    Time: 1611 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: --------------------------------
+#    Time: 1611 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: OSCILLOSCOPE VERIFICATION RESULTS
+#    Time: 1611 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: PASS = 32
+#    Time: 1611 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: FAIL = 0
+#    Time: 1611 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: --------------------------------
+#    Time: 1611 ns  Iteration: 0  Instance: /oscilloscope_top_tb
+# ** Note: OSCILLOSCOPE TEST PASSED
+#    Time: 1611 ns  Iteration: 0  Instance: /oscilloscope_top_tb

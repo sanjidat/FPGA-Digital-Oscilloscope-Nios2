@@ -1,6 +1,3 @@
-# FPGA-Digital-Oscilloscope-Nios2
-FPGA-based digital oscilloscope with triggered sample capture, on-chip memory, Nios II control, and Python waveform visualization.
-
 # FPGA Digital Oscilloscope with Nios II
 
 A hardware/software data-acquisition system implemented on the **Terasic DE10-Lite FPGA board**, combining **VHDL RTL design, trigger-based sample capture, on-chip memory, Avalon-MM communication, Nios II embedded software, and Python waveform visualization.**

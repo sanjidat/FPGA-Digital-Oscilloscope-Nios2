@@ -185,7 +185,7 @@ The Nios II processor successfully reads the captured FPGA samples:
 
 The same captured samples are transferred to the PC and reconstructed as a waveform in Python:
 
-![Captured waveform](images/results/captured_waveform.png)
+![Captured waveform](images/results/generated_sinewave.png)
 
 ## Simulation and Verification
 
@@ -226,34 +226,83 @@ simulation/results/oscilloscope_top_test_results.txt
 
 ```text
 FPGA-Digital-Oscilloscope-Nios2/
+├── avalon_mm_interface/
+│   └── oscilloscope_avmm.vhd
 │
-├── rtl/
-│   ├── sample_generator/
-│   ├── trigger_logic/
-│   ├── capture_controller/
-│   ├── sample_memory/
-│   ├── oscilloscope_core/
-│   ├── avalon_mm_interface/
-│   └── system_integration/
+├── capture_controller/
+│   ├── capture_controller.vhd
+│   └── captured_controller_tb.vhd
 │
-├── simulation/
-│   ├── oscilloscope_top_tb.vhd
+├── images/
 │   └── results/
-│       └── oscilloscope_top_test_results.txt
+│       ├── generated_sinwave.PNG
+│       └── niosII_console_output.PNG
+│
+│   └── simulation/
+│       └── oscilloscope_top_test_pass.txt
+│
+│   └── waveforms/
+│       ├── capture_controller_waveform.PNG
+│       ├── oscilloscope_core_top_module_waveform.PNG
+│       ├── sample_generator_waveform.PNG
+│       ├── sample_memory_waveform.PNG
+│       └── trigger_level_detected_waveform.PNG
+│
+├── oscilloscope_core/
+│   ├── oscilloscope_top.vhd
+│   └── oscilloscope_top_tb.vhd
 │
 ├── platform_designer/
 │   └── nio_oscilloscope.qsys
 │
-├── software/
-│   └── oscilloscope_app.c
-│
 ├── python_visualization/
 │   └── plot_waveform.py
 │
-├── images/
-│   └── results/
-│       ├── nios2_console_output.png
-│       └── captured_waveform.png
+├── rtl/
+│   ├── capture_controller.vhd 
+│   ├── oscilloscope_avmm.vhd 
+│   ├── oscilloscope_system_top.vhd
+│   ├── oscilloscope_top.vhd 
+│   ├── sample_generator.vhd
+│   ├── sample_memory.vhd
+│   └── trigger_logic.vhd
+│
+├── sample_generator/
+│   ├── sample_generator.vhd
+│   └── sample_generator_tb.vhd
+│
+├── sample_memory/
+│   ├── sample_memory.vhd
+│   └── sample_memory_tb.vhd
+│
+├── scripts/
+│   ├── run_capture_controller.do 
+│   ├── run_oscilloscope_top.do
+│   ├── run_sample_generator.do
+│   ├── run_sample_memory.do
+│   └── run_trigger_logic.do
+│
+├── software/
+│   └── oscilloscope_app.c
+│
+├── system_integration/
+│   └── oscilloscope_system_top.vhd
+│      
+│
+├── platform_designer/
+│   └── nio_oscilloscope.qsys
+
+│
+├── testbench/
+│   ├── capture_controller_tb.vhd 
+│   ├── oscilloscope_top_tb.vhd
+│   ├── sample_generator_tb.vhd
+│   ├── sample_memory_tb.vhd
+│   └── trigger_logic_tb.vhd
+│
+├── trigger_logic/
+│   ├── strigger_logic.vhd
+│   └── trigger_logic_tb.vhd
 │
 └── README.md
 ```
@@ -303,4 +352,4 @@ This project was developed as an end-to-end FPGA/embedded systems implementation
 - and Python-based data visualization.
 
 
-The current version uses an internally generated sine wave to validate the digital acquisition path. Future development could replace the sample generator with an **external ADC interface** and add features such as configurable sampling rate, larger capture memory, and pre-trigger sampling.
+The current version uses an internally generated sine wave to validate the digital acquisition path. Future development could replace the sample generator with an **external ADC interface** and add features such as a configurable sampling rate, larger capture memory, and pre-trigger sampling.

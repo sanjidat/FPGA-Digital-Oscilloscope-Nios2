@@ -203,7 +203,7 @@ OSCILLOSCOPE TEST PASSED
 The simulation log is available in:
 
 ```text
-simulation/results/oscilloscope_top_test_results.txt
+images/simulation/oscilloscope_top_test_pass.txt
 ```
 ## Hardware / Software Stack
 

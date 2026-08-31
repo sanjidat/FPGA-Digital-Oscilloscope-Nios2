@@ -180,11 +180,11 @@ The complete system was synthesized and programmed onto the DE10-Lite board.
 
 The Nios II processor successfully reads the captured FPGA samples:
 
-![Nios II capture output](images/results/nios2_console_output.png)
+![Nios II capture output](images/results/nios2_console_output.PNG)
 
 The same captured samples are transferred to the PC and reconstructed as a waveform in Python:
 
-![Captured waveform](images/results/generated_sinewave.png)
+![Captured waveform](images/results/generated_sinewave.PNG)
 
 ## Simulation and Verification
 

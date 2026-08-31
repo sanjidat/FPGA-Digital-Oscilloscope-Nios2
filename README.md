@@ -60,6 +60,9 @@ The generated values cover approximately the full 12-bit range:
 ```text
 0 – 4095
 ```
+![Sample Generator waveform](images/waveforms/sample_generator_waveform.PNG)
+
+
 ### Trigger Logic
 
 The trigger module detects a rising threshold crossing by comparing the current sample with the previous sample.
@@ -70,6 +73,9 @@ A trigger is generated when:
 previous_sample < trigger_level
 current_sample  >= trigger_level
 ```
+
+![Trigger Logic waveform](images/waveforms/trigger_level_detected_waveform.PNG)
+
 This allows acquisition to begin at a defined point in the input waveform instead of capturing samples at an arbitrary position.
 This synthetic source can later be replaced by an external ADC interface while keeping the trigger, capture, memory, and processor interface architecture.
 
@@ -80,6 +86,7 @@ Sample acquisition is controlled by a VHDL finite-state machine:
 ```text
 IDLE → WAIT_TRIGGER → CAPTURE → DONE
 ```
+![Capture Controller FSM](images/design/capture_controller_fsm.png)
 
 The controller:
 
@@ -90,13 +97,16 @@ The controller:
 - stores 32 valid samples,
 - and asserts a persistent `capture_done` status for processor polling.
 
-![Capture Controller FSM](images/design/capture_controller_fsm.png)
+![Capture Controller waveform](images/waveforms/capture_controller_waveform.PNG)
+
 
 ### Sample Memory
 
 A 32 × 12-bit sample memory stores the captured waveform.
 
 The capture controller manages the write side, while the Nios II processor accesses stored samples through the Avalon-MM interface.
+
+![Sample Memory waveform](images/waveforms/sample_memory_waveform.PNG)
 
 ## Nios II and Avalon-MM Integration
 
@@ -190,6 +200,8 @@ The same captured samples are transferred to the PC and reconstructed as a wavef
 
 The integrated oscilloscope core was verified using a VHDL top-level testbench in ModelSim.
 
+![Oscilloscope Core Top Module waveform](images/waveforms/oscilloscope_core_top_module_waveform.PNG)
+
 The testbench exercises the complete capture path and checks the captured 12-bit samples.
 
 Final simulation result:
@@ -202,9 +214,9 @@ OSCILLOSCOPE TEST PASSED
 
 The simulation log is available in:
 
-```text
-images/simulation/oscilloscope_top_test_pass.txt
-```
+[View Simulation Log](images/simulation/oscilloscope_top_test_pass.txt)
+
+
 ## Hardware / Software Stack
 
 |       Category     |          Technology         | 

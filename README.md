@@ -90,6 +90,8 @@ The controller:
 - stores 32 valid samples,
 - and asserts a persistent `capture_done` status for processor polling.
 
+![Capture Controller FSM](images/design/capture_controller_fsm.png)
+
 ### Sample Memory
 
 A 32 × 12-bit sample memory stores the captured waveform.
